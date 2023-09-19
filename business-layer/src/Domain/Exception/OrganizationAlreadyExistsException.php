@@ -4,6 +4,6 @@ declare(strict_types=1);
 
 namespace OpenCodeCo\BusinessLayer\Domain\Exception;
 
-class OrganizationAlreadyExistsException extends \RuntimeException
+class OrganizationAlreadyExistsException extends \DomainException
 {
 }
