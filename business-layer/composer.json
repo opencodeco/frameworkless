@@ -1,0 +1,25 @@
+{
+    "name": "opencodeco/business-layer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "OpenCodeCo\\BusinessLayer\\": "src/",
+            "OpenCodeCo\\BusinessLayer\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vinicius Vicente",
+            "email": "vinicius.vicente@joingsg.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    }
+}
