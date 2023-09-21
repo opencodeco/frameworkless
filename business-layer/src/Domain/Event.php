@@ -11,18 +11,13 @@ class Event implements \JsonSerializable
     private \ArrayIterator $participants;
 
     public function __construct(
-        private readonly string $id,
+        public readonly string $id,
         private readonly string $name,
         private readonly int $price,
         private int $slots,
         array $participants = [],
     ) {
         $this->applyParticipants($participants);
-    }
-
-    public function getId(): string
-    {
-        return $this->id;
     }
 
     private function applyParticipants(array $participants): void
@@ -38,7 +33,7 @@ class Event implements \JsonSerializable
             throw new EventFullException();
         }
 
-        $this->participants->offsetSet($participant->getId(), $participant);
+        $this->participants->offsetSet($participant->id, $participant);
         $this->slots--;
     }
 

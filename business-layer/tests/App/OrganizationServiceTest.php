@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenCodeCo\BusinessLayer\Tests;
+namespace OpenCodeCo\BusinessLayer\Tests\App;
 
 use OpenCodeCo\BusinessLayer\App\Builder\EventBuilder;
 use OpenCodeCo\BusinessLayer\App\Builder\OrganizationBuilder;

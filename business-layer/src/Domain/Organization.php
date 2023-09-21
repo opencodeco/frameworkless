@@ -29,11 +29,11 @@ class Organization implements \JsonSerializable
 
     public function addEvent(Event $event): void
     {
-        if ($this->events->offsetExists($event->getId())) {
+        if ($this->events->offsetExists($event->id)) {
             throw new EventAlreadyExistsException();
         }
 
-        $this->events->offsetSet($event->getId(), $event);
+        $this->events->offsetSet($event->id, $event);
     }
 
     public function addParticipantToEvent(string $eventId, Participant $participant): void
